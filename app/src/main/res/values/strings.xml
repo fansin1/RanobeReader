@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">RanobeReader</string>
+    <string name="first_chapter_hint">First chapter</string>
+    <string name="last_chapter_hint">Last chapter</string>
+    <string name="download_button">Download</string>
+    <string name="start_reading_button">Start reading</string>
+    <string name="continue_reading_button">Continue reading</string>
+    <string name="chapter_button">Chapters</string>
+    <string name="main_activity_header">My novels</string>
+    <string name="add_book_activity_header">All novels</string>
+    <string name="search_title">Search</string>
+    <string name="search_hint">Write novel\'s name</string>
+    <string name="download_menu">Download…(%1$d/%2$d)</string>
+</resources>
