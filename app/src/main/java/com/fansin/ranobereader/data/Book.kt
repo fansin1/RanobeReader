@@ -31,7 +31,6 @@ class Book : Serializable{
     lateinit var url: String
     @Expose
     lateinit var description: String
-    @Expose
     var author = ""
     var country = ""
 
@@ -46,7 +45,7 @@ class Book : Serializable{
 
     @SerializedName("view")
     @Expose
-    var views: Int = 0
+    var viewsCount: Int = 0
 
     var chaptersCount: Int = 0
         set(value) {

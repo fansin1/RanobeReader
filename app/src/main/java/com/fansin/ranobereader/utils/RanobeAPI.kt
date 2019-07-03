@@ -18,10 +18,9 @@ object RanobeAPI {
         try {
 
             val jsonObject = JSONObject(client.newCall(Request.Builder().url(url).build()).
-                    execute().body()!!.string()).
-                    getJSONObject("result")
+                    execute().body()!!.string())
 
-            return jsonObject.getJSONObject("part").getString("content")
+            return jsonObject.getString("content")
 
         } catch (e: Exception) {
             throw e
@@ -37,8 +36,7 @@ object RanobeAPI {
 
             val jsonArray = JSONObject(client.newCall(Request.Builder().url(url).build()).
                     execute().body()!!.string()).
-                    getJSONObject("result").
-                    getJSONArray("books")
+                    getJSONArray("items")
 
             return BookParser.parseArray(jsonArray)
 
@@ -56,8 +54,7 @@ object RanobeAPI {
         try {
 
             val jsonObject = JSONObject(client.newCall(Request.Builder().url(url).build()).
-                    execute().body()!!.string()).
-                    getJSONObject("result")
+                    execute().body()!!.string())
 
             return BookParser.parse(jsonObject)
 
